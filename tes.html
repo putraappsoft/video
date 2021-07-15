@@ -1,47 +1,52 @@
-<!--Used Cache--><!--server_m3u8-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="id">
 <head>
+<title>Secret Number vs Weeekly - Putra Appsoft</title>
 <meta charset="UTF-8" />
 <meta name="robots" content="noindex" />
-<META NAME="GOOGLEBOT" CONTENT="NOINDEX" /><meta name="referrer" content="origin">
+<META NAME="GOOGLEBOT" CONTENT="NOINDEX" />
+<meta name="referrer" content="origin">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-<script type="text/javascript" src="//ssl.p.jwpcdn.com/player/v/8.4.1/jwplayer.js"></script>
+<script src="https://ssl.p.jwpcdn.com/player/v/8.4.1/jwplayer.js"></script>
 <style type="text/css">
-*{margin:0;padding:0}#picasa{position:absolute;width:100%!important;height:100%!important}
+*{margin:0;padding:0}#putraappsoft{position:absolute;width:100%!important;height:100%!important}
 .jw-button-color:hover, 
 .jw-toggle, 
 .jw-toggle:hover,
 .jw-open, 
-
 .jw-progress {
-    color: #008fee !important;
+    color: #ff0000 !important;
 }
-.jw-active-option{ background-color: #008fee !important;
+.jw-active-option{ background-color: #ff0000 !important;
 }
 .jw-progress {
-    background: #008fee !important;
+    background: #ff0000 !important;
 }
 .jw-skin-seven .jw-toggle.jw-off{color:#fff !important}
 </style>
-<script type="text/javascript">
-jwplayer.key='ITWMv7t88JGzI0xPwW8I0+LveiXX9SWbfdmt0ArUSyc='
-</script>
 </head>
 <body>
 <center>
-<div id="picasa" class="picasa"></div>
+<div id="putraappsoft" class="putraappsoft"></div>
 <script type="text/javascript">
-jwplayer('picasa').setup({
-        sources: [{"file":"https://putraproduction-videoplayer.netlify.app/eps/secretnumbervsweeekly/720p/index.m3u8","type":"m3u8"}], 
-		            id:'picasa',
+ jwplayer('putraappsoft').setup({
+        sources: [{"file":"https://putraproduction-videoplayer.netlify.app/eps/secretnumbervsweeekly/720p/index.m3u8","label":"720p","type":"m3u8"}], 
+				tracks:[
+				{
+					file: "https://putraproduction-videoplayer.netlify.app/eps/tes.srt",
+					label: "Indonesia", //language
+					kind: "captions",
+					"default": true
+				}
+			],
+		            id:'putraappsoft',
     controls: true,
     displaytitle: true,
             image: "https://lh3.googleusercontent.com/-74JzG9_PmOM/YOr8TsiopoI/AAAAAAAAAdw/mYcqFX7PoN0EYt76NcMFZ_pNWTvBSJWxACLcBGAsYHQ/s1600/1626012746211829-0.png",
         advertising: {
         client: "vast",
         schedule: {
-           "myAds1": {
+          "myAds1": {
 					"client":"vast",
                     "offset": "00:01:00:000",
 					"tag":"https://www.videosprofitnetwork.com/watch.xml?key=46c8d14d1644fbb75082e9a48b689016",
@@ -166,8 +171,11 @@ jwplayer('picasa').setup({
     width: "100%",
  aspectratio: "16:9",
     fullscreen: "true",
-        autostart: false,
+        autostart: true,
     });
- </script>
+  jwplayer().on("error", function() { 
+ window.location="https://www.putraproduction.eu.org"; 
+ });
+</script>
 </body>
 </html>
