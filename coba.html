@@ -187,5 +187,9 @@ player.addButton("https://video.putraappsoft.eu.org/assets/images/replay.webp","
 	player.seek(player.getPosition()-10)
 }
 ,"forward");
- }); </script>
+ });
+jwplayer().on("error", function() { 
+ window.location="https://www.putraproduction.eu.org"; 
+ });
+</script>
 </html>
