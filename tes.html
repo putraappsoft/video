@@ -30,7 +30,7 @@
 <div id="putraappsoft" class="putraappsoft"></div>
 <script type="text/javascript">
  jwplayer('putraappsoft').setup({
-        sources: [{"file":"redirector-putraappsoft.herokuapp.com/film/cars1.php","label":"720p","type":"mp4"}], 
+        sources: [{"file":"https://redirector-putraappsoft.herokuapp.com/film/cars1.php","label":"720p","type":"mp4"}], 
 				tracks:[
 				{
 					file: "https://putraproduction-videoplayer.netlify.app/eps/tes.srt",
@@ -173,9 +173,6 @@
     fullscreen: "true",
         autostart: true,
     });
-  jwplayer().on("error", function() { 
- window.location="https://www.putraproduction.eu.org"; 
- });
 </script>
 </body>
 </html>
