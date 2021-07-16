@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script src="/js/player.js" type="text/javascript"></script>
+
+
+ <!--------------------------------------------------------------------------
+Kalo gak bisa coding, setidaknya jangan nyuri script orang bangsat. 
+Berusaha dong, iya emang gue gak bisa coding tapi gue cari dan belajar berusaha sendiri, gak kayak lo bisanya copy paste punya orang. 
+Sok sok an progamer, developer segala macem alah tai.
+
+Gue ijinin boleh pake script gue ini, tapi harus di fork di github sini gak boleh download trus upload seenak jidat lo. 
+Lo juga harus hargai dong gue yang cape coding dan cari script lain. 
+Boleh lo gunain tapi harus lo fork di github, lo tau gak fork itu apa?. 
+kalo gak tau lo jangan sok sok an progamer apa lah segala macem. 
+Github aja masih belajar elu.
+
+Fork di github gue, pokoknya semua script yang ada di github gue boleh lo pake siapa aja. 
+Dengan syarat jangan download dan uploud ke repositori lo sendiri se enak jidat tanpa nyantumin credit gue tod. 
+Lo gak menghargai gue cari code nya dimana ha?. 
+Udah dikasih gratis gak tau terimakasih.
+
+Fork my github for free use: https://github.com/putraappsoft
+--------------------------------------------------------------------------->
+	
+	
+<link rel="stylesheet" type="text/css" href="/css/player.css" />
+<style> 
+#putraappsoft.jw-flag-aspect-mode { height: 100%!important; } 
+#putraappsoft { position: absolute } 
+</style>
+</head>
+<body style="background-color: black;"> 
+<img id="loader1" src="/assets/images/puff.svg" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);" width="36" height="36" alt="loading gif" />
+<div id="putraappsoft"></div>
+</body>
+<script src="/js/jquery.min.js"></script> 
+<script> $(document).ready(function() { var player=jwplayer("putraappsoft");
+var config=
+	{
+	cast:
+		{
+		appid:"000000"
+	},
+     width:"100%",
+     height:"100%",
+     aspectratio:"16:9",
+     autostart:false,
+     controls:true,
+     primary:"html5",
+     abouttext:"PUTRA VIDEO PLAYER",
+     aboutlink:"https://video.putraappsoft.eu.org",
+     image:"https://lh3.googleusercontent.com/-Uucv6xjdSdE/YLGyHqeZqsI/AAAAAAAAAU0/j5o8je-HJ74iSrUFyH1yAO9B19MRDYyXwCLcBGAsYHQ/s1600/1622258203497025-0.png",
+sources:[
+		{
+		"file":"https://redirector-putraappsoft.herokuapp.com/film/standbyme.php","label":"720p","type":"mp4"
+	}
+	],
+logo:
+		{
+		file:"https://3.bp.blogspot.com/-_gRaLB_Lg3s/YIuwfW2HcwI/AAAAAAAABk4/hyDc_Zm2SSQGc_-nG2QOi-Zg9tPg2uGFQCNcBGAsYHQ/s320/20210425_204537.png",link:"https://www.putraappsoft.eu.org",position:"top-right",
+	}
+	,captions:
+		{
+		color:"#FFFFFF",fontSize:"14",fontFamily:"Trebuchet MS, Sans Serif",backgroundColor:"#000000",backgroundOpacity:0,edgeStyle:"raised",
+	}
+	,advertising: {
+        client: "vast",
+        schedule: {
+          "myAds1": {
+					"client":"vast",
+                    "offset": "00:01:00:000",
+					"tag":"https://www.videosprofitnetwork.com/watch.xml?key=46c8d14d1644fbb75082e9a48b689016",
+					"skipmessage": "Lewati iklan dalam (XX)"
+          },
+          "myAds2": {
+					"client":"vast",
+                    "offset": "10%",
+					"tag":"https://www.videosprofitnetwork.com/watch.xml?key=46c8d14d1644fbb75082e9a48b689016",
+					"skipmessage": "Lewati iklan dalam (XX)"
+          },
+          "myAds3": {
+					"client":"vast",
+                    "offset": "25%",
+					"tag":"https://www.videosprofitnetwork.com/watch.xml?key=46c8d14d1644fbb75082e9a48b689016",
+					"skipmessage": "Lewati iklan dalam (XX)"
+          },
+          "myAds4": {
+					"client":"vast",
+                    "offset": "50%",
+					"tag":"https://www.videosprofitnetwork.com/watch.xml?key=46c8d14d1644fbb75082e9a48b689016",
+					"skipmessage": "Lewati iklan dalam (XX)"
+          },
+          "myAds5": {
+					"client":"vast",
+                    "offset": "75%",
+					"tag":"https://www.videosprofitnetwork.com/watch.xml?key=46c8d14d1644fbb75082e9a48b689016",
+					"skipmessage": "Lewati iklan dalam (XX)"
+          },
+          "myAds6": {
+					"client":"vast",
+                    "offset": "90%",
+					"tag":"https://www.videosprofitnetwork.com/watch.xml?key=46c8d14d1644fbb75082e9a48b689016",
+					"skipmessage": "Lewati iklan dalam (XX)"
+          }
+        }
+      },
+};
+player.setup(config);
+player.addButton("https://video.putraappsoft.eu.org/assets/images/forward.webp","10s Forward",function()
+	{
+	player.seek(player.getPosition()+10)
+}
+,"backward");
+player.addButton("https://video.putraappsoft.eu.org/assets/images/replay.webp","10s Replay",function()
+	{
+	player.seek(player.getPosition()-10)
+}
+,"forward");
+ });
+jwplayer().on("error", function() { 
+ window.location="https://www.putraproduction.eu.org"; 
+ });
+</script>
+</html>
