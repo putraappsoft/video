@@ -12,26 +12,6 @@ window.jwplayer=function(t){function e(e){for(var n,i,o=e[0],u=e[1],a=0,s=[];a<o
 
 
 var jwDefaults = {
-  "aspectratio": "16:9",
-  "autostart": false,
-  "controls": true,
-  "displaydescription": false,
-  "displaytitle": false,
-  "height": 260,
-  "key": "/Jb1xqBHDD3cgdY3n4i00Ps7mGTvL9PGrbrj+j6ti74DciZEsM+TfkLWDsX2zUZc",
-  "logo": {
-    "file": "https://assets-jpcust.jwpsrv.com/watermarks/RUjIlP0s.png",
-    "hide": false,
-    "margin": "10",
-    "position": "top-right"
-  },
-  "mute": false,
-  "ph": 1,
-  "pid": "Jq6HIbgz",
-  "playbackRateControls": true,
-  "preload": "metadata",
-  "repeat": false,
-  "stretching": "uniform",
-  "width": "100%"
+  "playbackRateControls": true
 };
 jwplayer.defaults = jwDefaults;
